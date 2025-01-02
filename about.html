@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Manlai Munkhbold</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nabla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar__container">
+                <div class="nav-left">
+                    <a href="/index.html" class="navbar__name">MANLAI MUNKHBOLD</a>
+                    <a href="/index.html" class="navbar__name_mobile">MANLAI</a>
+                </div>
+                <div class="nav-middle">
+                    <div class="nav-indicator-glow-about"></div>
+                    <div class="nav-square">
+                        <a href="/index.html" class="nav-toggle">
+                            <div class="text-nav-toggle">Portfolio</div>
+                        </a>
+                        <a href="#" class="nav-toggle current">
+                            <div class="text-nav-toggle">About</div>
+                        </a>
+                        <div class="nav-indicator-square-about"></div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="social-wrapper">
+                        <a href = "https://www.linkedin.com/in/manlaimunkhbold/" target = "_blank" class = "socials w-inline-block">
+                            <div class="text-socialnav">LinkedIn</div>
+                        </a>
+                        <a href = "https://drive.google.com/file/d/1DqPHRohPhHha-cifXC7usj_gPIzla0b_/view?usp=sharing" target = "_blank"class = "socials w-inline-block">
+                            <div class="text-socialnav">Resume</div>
+                        </a>
+                    </div>
+                    <div class = "hamburger-menu" id = "hamburger-menu">
+                        <div class = "bar"></div>
+                        <div class = "bar"></div>
+                        <div class = "bar"></div>
+                    </div>
+                    <script>
+                        const body = document.querySelector('body');
+                        const buttonToggle = document.getElementById('button-toggle');
+                        buttonToggle.click = function(){
+                            buttonToggle.classList.toggle('active');
+                            body.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hamburger Menu Content -->
+        <div class="hamburger-content" id="hamburger-content">
+            <a href="https://www.linkedin.com/in/manlaimunkhbold/" target="_blank" class="socials w-inline-block">
+                <div class="text-socialnav">LinkedIn</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1DqPHRohPhHha-cifXC7usj_gPIzla0b_/view?usp=sharing" target="_blank" class="socials w-inline-block">
+                <div class="text-socialnav">Resume</div>
+            </a>
+        </div>
+        <!-- JavaScript for Hamburger Menu -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburgerMenu = document.getElementById('hamburger-menu');
+                const hamburgerContent = document.getElementById('hamburger-content');
+
+                hamburgerMenu.addEventListener('click', function() {
+                    hamburgerContent.classList.toggle('show');
+                });
+            });
+        </script>
+
+        <!-- About Section -->
+        <div class="section-about">
+            <div class="container-about">
+                <div class="about-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class = "about-image-container">
+                    <img src="images/Me.jpg" alt = "Manlai Munkhbold">
+                </div>
+                <div class="about-content">
+                    <p>Hello! I'm Manlai Munkhbold, a passionate and dedicated engineer with a love for technology and innovation. I have a diverse skill set that includes programming, PCB design, 3D design and printing, soldering, and laser cutting. My journey in the world of engineering has been driven by a desire to create and bring ideas to life.</p>
+                    <p>Each project I've worked on has been an opportunity to learn and grow, and I am always excited to take on new challenges. When I'm not working on projects, I enjoy exploring new technologies, collaborating with like-minded individuals, and sharing my knowledge with others. I believe that the best way to grow is to continuously learn and push the boundaries of what is possible.</p>
+                    <p>Feel free to explore my portfolio to see some of the projects I've worked on, and don't hesitate to reach out if you'd like to connect.</p>
+                    <p>manlaimun@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

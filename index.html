@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manlai Munkhbold</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nabla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar__container">
+                <div class="nav-left">
+                    <a href="/index.html" class="navbar__name">MANLAI MUNKHBOLD</a>
+                    <a href="/index.html" class="navbar__name_mobile">MANLAI</a>
+                </div>
+                <div class="nav-middle">
+                    <div class="nav-indicator-glow"></div>
+                    <div class="nav-square">
+                        <a href="#" class = "nav-toggle current">
+                            <div class="text-nav-toggle">Portfolio</div>
+                        </a>
+                        <a href = "/about.html" class = "nav-toggle">
+                            <div class="text-nav-toggle">About</div>
+                        </a>
+                        <div class="nav-indicator-square"></div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="social-wrapper">
+                        <a href = "https://www.linkedin.com/in/manlaimunkhbold/" target = "_blank" class = "socials w-inline-block">
+                            <div class="text-socialnav">LinkedIn</div>
+                        </a>
+                        <a href = "https://drive.google.com/file/d/1DqPHRohPhHha-cifXC7usj_gPIzla0b_/view?usp=sharing" target = "_blank"class = "socials w-inline-block">
+                            <div class="text-socialnav">Resume</div>
+                        </a>
+                    </div>
+                    <div class = "hamburger-menu" id = "hamburger-menu">
+                        <div class = "bar"></div>
+                        <div class = "bar"></div>
+                        <div class = "bar"></div>
+                    </div>
+                    <script>
+                        const body = document.querySelector('body');
+                        const buttonToggle = document.getElementById('button-toggle');
+                        buttonToggle.click = function(){
+                            buttonToggle.classList.toggle('active');
+                            body.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hamburger Menu Content -->
+        <div class="hamburger-content" id="hamburger-content">
+            <a href="https://www.linkedin.com/in/manlaimunkhbold/" target="_blank" class="socials w-inline-block">
+                <div class="text-socialnav">LinkedIn</div>
+            </a>
+            <a href="https://drive.google.com/file/d/1DqPHRohPhHha-cifXC7usj_gPIzla0b_/view?usp=sharing" target="_blank" class="socials w-inline-block">
+                <div class="text-socialnav">Resume</div>
+            </a>
+        </div>
+        <!-- JavaScript for Hamburger Menu -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburgerMenu = document.getElementById('hamburger-menu');
+                const hamburgerContent = document.getElementById('hamburger-content');
+
+                hamburgerMenu.addEventListener('click', function() {
+                    hamburgerContent.classList.toggle('show');
+                });
+            });
+        </script>
+
+        <!-- Main Section -->
+        <div class="section-projects">
+            <div class="container-projects">
+                <div class="project-card">
+                    <div class="project-card-outline-outer-front">
+                        <div class="project-card-outline-front" id="ModernRecordPlayer">
+                            <div class="project-card-top">
+                                <div class="project-card-title">
+                                    <div class="text-title">Modern Record Player</div>
+                                </div>
+                                <div class="project-card-subtitle">
+                                    <div class="text-subtitle">A New, but Familiar Way to Listen to Music</div>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src="images/TopLeft.png" alt="Modern Record Player">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-outline-outer-back">
+                        <div class="project-card-outline-back">
+                            <div class="image-container">
+                                <img src="images/MRP_IRL.jpg" alt="Modern Record Player">
+                            </div>
+                            <div class="text-box">
+                                <div class="section-header">Project Description</div>
+                                <div class="section-content">
+                                    A familiar twist on the classic record player, designed for the tech-savvy audiophile. 
+                                    By simply placing an RFID card with the song/album/playlist name on top of the player,
+                                    your favorite music will be played instantly. 
+                                </div>
+                                <div class="section-header">Skills Learned</div>
+                                <div class="section-content">
+                                    This project was a journey of discovery, where I combined a diverse set of skills to bring my idea to life. 
+                                    From programming microcontrollers in C++ and practicing the art of soldering, to designing and printing in 3D, and integrating RFID technologies 
+                                    all while managing the project from start to finish I transformed a concept into a tangible creation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-outline-outer-front">
+                        <div class="project-card-outline-front">
+                            <div class="project-card-top">
+                                <div class="project-card-title">
+                                    <div class="text-title">Artistic Turtle Bot</div>
+                                </div>
+                                <div class="project-card-subtitle">
+                                    <div class="text-subtitle">Microcontroller-Based Servo-Driven Drawing Robot</div>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src = "images/View1.png" alt="Drawing Robot">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-outline-outer-back">
+                        <div class="project-card-outline-back">
+                            <div class="image-container">
+                                <img src="images/Draw_IRL.jpg" alt="Artistic Turtle Bot">
+                            </div>
+                            <div class="text-box">
+                                <div class="section-header">Project Description</div>
+                                <div class="section-content">
+                                    With the ability to draw anything you can dream up, this innovative device is your personal artist on wheels. 
+                                    Simply send wireless commands to its microcontroller, and watch as the robot effortlessly maneuvers its wheels and guides the pen to create stunning artwork. 
+                                    Whether for art, design, or fun, the limit is your imagination.
+                                </div>
+                                <div class="section-header">Skills Learned</div>
+                                <div class="section-content">
+                                    This project allowed me to combine my love of technology and art.
+                                    Using a version of Python better suited for microcontrollers (microPython), I could send commands wirelessly or preprogram movements to fulfill my vision.
+                                    By also designing a custom PCB and cutting acrylic to specific dimensions, everything fit together seamlessly and precisely together.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-outline-outer-front">
+                        <div class="project-card-outline-front">
+                            <div class="project-card-top">
+                                <div class="project-card-title">
+                                    <div class="empty-div"></div>
+                                    <div class="text-title">Robotic Controller</div>
+                                </div>
+                                <div class="project-card-subtitle">
+                                    <div class="text-subtitle">Raspberry Pi Based 3-Axis Robotic Controller</div>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src = "images/CNCMachine.jpg" alt="Robotic Controller">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-outline-outer-back">
+                        <div class="project-card-outline-back">
+                            <div class="image-container">
+                                <img src="images/CNCMachine.jpg" alt="Robotic Controller">
+                            </div>
+                            <div class="text-box">
+                                <div class="section-header">Project Description</div>
+                                <div class="section-content">
+                                    The goal of this project was to produce a commercially viable 3-axis motion controller. 
+                                    This entailed creating a means for the Raspberry Pi (master controller) to send commands to a secondary interepreter (slave controller) that would control the motion of an array of stepper motors.
+                                    This would then allow the control of any number of machinery including 3D printers, CNC machine, laser cutter, pastry decorator machine, and more.
+                                </div>
+                                <div class="section-header">Skills Learned</div>
+                                <div class="section-content">
+                                    This project was a culmination of all the skills I'd learned up to that point. Combining project development, PCB design, 3D design and printing,
+                                    programming, soldering, laser cutting, and countless other considerations to build something commercially viable. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-outline-outer-front">
+                        <div class="project-card-outline-front">
+                            <div class="project-card-top">
+                                <div class="project-card-title">
+                                    <div class="empty-div"></div>
+                                    <div class="text-title">Hovercraft</div>
+                                </div>
+                                <div class="project-card-subtitle">
+                                    <div class="text-subtitle">Self-Stabilizing Arduino Based Hovercraft</div>
+                                </div>
+                            </div>
+                            <div class="image-box">
+                                <img src = "images/Hovercraft.jpg" alt="Hovercraft">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-outline-outer-back">
+                        <div class="project-card-outline-back">
+                            <div class="image-container">
+                                <img src="images/Hovercraft2.jpg" alt="Hovercraft-alt">
+                            </div>
+                            <div class="text-box">
+                                <div class="section-header">Project Description</div>
+                                <div class="section-content">
+                                    The objective of the project was to design and build a fully autonomous hovercraft capable of navigating a track. 
+                                    The track includeded three obstacles of increasing height and would vary in width. 
+                                    The hovercraft must successfully traverse the course, stop precisely under a horizontal bar at the end.
+                                </div>
+                                <div class="section-header">Skills Learned</div>
+                                <div class="section-content">
+                                    This project involved working and collaborating with a team to design and build a hovercraft with a variety of sensors and motors.
+                                    Since it was designed to be self-stabilizing and autonomous, it required a lot of testing and debugging to ensure it could navigate the course.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
