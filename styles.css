@@ -2,12 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'NeueMontreal';
+    font-family: 'PP Neue Montreal Book';
 }
 
 @font-face {
-    font-family: 'NeueMontreal';
-    src: url(neue-montreal/NeueMontreal-Regular.otf);
+    font-family: 'PP Neue Montreal Book';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap; /* Shows fallback text immediately */
+    src: local('PP Neue Montreal Book'), url('pp-neue-montreal/ppneuemontreal-book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap; /* Shows fallback text immediately */
+    src: local('PP Neue Montreal Medium'), url('pp-neue-montreal/ppneuemontreal-medium.woff') format('woff');
 }
 
 /* Prevent blue text and underlining when linked */
@@ -154,12 +165,15 @@ body {
 
 /* Style for the current section link */
 .nav-toggle.current {
-    pointer-events: none; /* Disable click events */
+    /*pointer-events: none;  Disable click events */
     cursor: default; /* Change the cursor to default */
 }
 
-.text-nav-toggle {
+.nav-toggle:hover .text-nav-toggle {
+    font-weight: bold;
+}
 
+.text-nav-toggle {
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
@@ -190,6 +204,14 @@ body {
     position: absolute;
     margin: auto;
     left: 94px;
+}
+
+/* Add transition for smooth movement to both indicator types */
+.nav-indicator-glow,
+.nav-indicator-square,
+.nav-indicator-glow-about,
+.nav-indicator-square-about {
+    transition: transform 0.3s ease; /* Smooth animation */
 }
 
 /* Right Section */
@@ -226,14 +248,20 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add pill-shaped shadow on hover */
 }
 
+.socials:hover .text-socialnav {
+    font-weight: bold;
+}
+
 .text-socialnav {
+    
     color: #000000;
     letter-spacing: .2px;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.4;
     text-decoration: none;
 }
+
 
 /* Hamburger Menu */
 .hamburger-menu {
